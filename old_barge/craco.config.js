@@ -6,9 +6,11 @@ module.exports = () => {
       open: false,
       port: 2001,
     },
+
     plugins: [
       {
         plugin: cracoModuleFederation,
+        options: { useNamedChunkIds: true }, //THIS LINE IS OPTIONAL
       },
     ],
   };

@@ -6,8 +6,8 @@
   ],
   "compilerOptions": {
     "paths": {
-      "*": ["./@mf-types/*"]
+      "*": ["./@mf-types/*"],
+      "components/*": ["../components/dist/mf/@mf-types/*"]
     }
-  },
-  "include": ["./@mf-types/*"]
+  }
 }

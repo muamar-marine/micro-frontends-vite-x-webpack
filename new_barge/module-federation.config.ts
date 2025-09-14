@@ -1,7 +1,7 @@
 import { federation } from '@module-federation/vite';
 
 export default federation({
-  name: 'shell',
+  name: 'new_barge',
   filename: 'remoteEntry.js',
   exposes: {},
   library: { type: 'var', name: 'shared' },
