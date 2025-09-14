@@ -1,7 +1,9 @@
 module.exports = {
   name: 'old_barge',
   filename: 'remoteEntry.js',
-  exposes: {},
+  exposes: {
+    './OldBargeContent': './src/App.tsx',
+  },
   // library: { type: 'var', name: 'shared' },
   remotes: {
     shell: 'shell@http://localhost:2000/remoteEntry.js',
@@ -12,5 +14,6 @@ module.exports = {
   shared: {
     react: { singleton: true },
     'react-dom': { singleton: true },
+    'react-router-dom': { singleton: true },
   },
 };

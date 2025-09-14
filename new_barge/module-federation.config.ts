@@ -3,7 +3,10 @@ import { federation } from '@module-federation/vite';
 export default federation({
   name: 'new_barge',
   filename: 'remoteEntry.js',
-  exposes: {},
+  exposes: {
+    './NewBargeContent': './src/App.tsx',
+    './ProfilePage': './src/pages/profiles',
+  },
   library: { type: 'var', name: 'shared' },
   remotes: {
     shell: {
@@ -26,5 +29,6 @@ export default federation({
   shared: {
     react: { singleton: true },
     'react-dom': { singleton: true },
+    'react-router-dom': { singleton: true },
   },
 });

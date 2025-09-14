@@ -12,7 +12,7 @@ export default federation({
       entry: 'http://localhost:2000/remoteEntry.js',
     },
     old_barge: {
-      type: 'module',
+      type: 'var',
       name: 'old_barge',
       entry: 'http://localhost:2001/remoteEntry.js',
     },
@@ -26,5 +26,6 @@ export default federation({
   shared: {
     react: { singleton: true },
     'react-dom': { singleton: true },
+    'react-router-dom': { singleton: true },
   },
 });
