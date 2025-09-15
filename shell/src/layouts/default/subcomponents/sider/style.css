@@ -36,3 +36,10 @@
 .default_layout__sider__content__menu :where(.mt-menu-inline .mt-menu-item) {
   margin-inline: 0;
 }
+
+.default_layout__sider__versioning {
+  background: linear-gradient(to left, #227d53, #12442a);
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 1rem;
+}

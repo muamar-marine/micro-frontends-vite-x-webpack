@@ -3,7 +3,6 @@ import React, { type FC } from 'react';
 import { App as Antd, ConfigProvider } from 'antd';
 
 const HomePage = React.lazy(() => import('./pages/home'));
-const SettingsPage = React.lazy(() => import('./pages/settings'));
 
 // @ts-expect-error EXPECT
 const NewBargePages = React.lazy(() => import('new_barge/NewBargeContent'));
@@ -20,7 +19,7 @@ const ThemeWrapper: FC<ThemeWrapperProps> = ({ children }) => {
   return (
     <Antd>
       <ConfigProvider
-      prefixCls='mt'
+        prefixCls="mt"
         theme={{
           token: {
             colorPrimary: '#00B96B',
@@ -48,14 +47,6 @@ function App() {
           element={
             <ThemeWrapper>
               <HomePage />
-            </ThemeWrapper>
-          }
-        />
-        <Route
-          path="settings"
-          element={
-            <ThemeWrapper>
-              <SettingsPage />
             </ThemeWrapper>
           }
         />

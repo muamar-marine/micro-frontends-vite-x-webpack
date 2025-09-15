@@ -1,0 +1,42 @@
+export const mockShipmentData = [
+  {
+    cargo_owner_name: 'PT Regress Cargo',
+    laycan: '20 Mar 2025 - 27 Mar 2025',
+    port_of_discharge: 'Jetty Port Automation 19 March 2025-7',
+    port_of_loading: 'Jetty Port Automation 03 February 2025-14',
+    shipment_number: 'MT-3GRI9',
+    vessel_owner_name: 'Brebes Vessel Tbk',
+  },
+  {
+    cargo_owner_name: 'PT Nusantara Logistik',
+    laycan: '05 Apr 2025 - 12 Apr 2025',
+    port_of_discharge: 'Tanjung Priok Port',
+    port_of_loading: 'Balikpapan Port',
+    shipment_number: 'MT-7HJK2',
+    vessel_owner_name: 'Samudera Vessel Line',
+  },
+  {
+    cargo_owner_name: 'CV Lautan Emas',
+    laycan: '15 May 2025 - 22 May 2025',
+    port_of_discharge: 'Surabaya Port',
+    port_of_loading: 'Makassar Port',
+    shipment_number: 'MT-9PLQ8',
+    vessel_owner_name: 'Pelangi Vessel Corp',
+  },
+  {
+    cargo_owner_name: 'PT Sumber Makmur',
+    laycan: '01 Jun 2025 - 08 Jun 2025',
+    port_of_discharge: 'Belawan International Port',
+    port_of_loading: 'Tanjung Perak Port',
+    shipment_number: 'MT-2XCV4',
+    vessel_owner_name: 'Bintang Vessel Nusantara',
+  },
+  {
+    cargo_owner_name: 'PT Global Marine',
+    laycan: '10 Jul 2025 - 17 Jul 2025',
+    port_of_discharge: 'Batam Port',
+    port_of_loading: 'Dumai Port',
+    shipment_number: 'MT-6MNB5',
+    vessel_owner_name: 'Samodra Vessel Persada',
+  },
+];

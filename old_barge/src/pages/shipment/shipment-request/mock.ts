@@ -1,0 +1,42 @@
+export const mockShipmentRequestData = [
+  {
+    shipment_request_number: 'SR-001',
+    cargo_owner_name: 'PT Regress Cargo',
+    port_of_loading: 'Tanjung Priok Port',
+    port_of_discharge: 'Balikpapan Port',
+    laycan: '20 Mar 2025 - 27 Mar 2025',
+    load_type_information: ['Bulk Coal', 'Dangerous Goods'],
+  },
+  {
+    shipment_request_number: 'SR-002',
+    cargo_owner_name: 'PT Nusantara Logistik',
+    port_of_loading: 'Belawan Port',
+    port_of_discharge: 'Makassar Port',
+    laycan: '05 Apr 2025 - 12 Apr 2025',
+    load_type_information: ['Liquid Cargo'],
+  },
+  {
+    shipment_request_number: 'SR-003',
+    cargo_owner_name: 'CV Lautan Emas',
+    port_of_loading: 'Surabaya Port',
+    port_of_discharge: 'Batam Port',
+    laycan: '15 May 2025 - 22 May 2025',
+    load_type_information: ['Container', 'Refrigerated Cargo'],
+  },
+  {
+    shipment_request_number: 'SR-004',
+    cargo_owner_name: 'PT Sumber Makmur',
+    port_of_loading: 'Dumai Port',
+    port_of_discharge: 'Tanjung Perak Port',
+    laycan: '01 Jun 2025 - 08 Jun 2025',
+    load_type_information: ['Project Cargo'],
+  },
+  {
+    shipment_request_number: 'SR-005',
+    cargo_owner_name: 'PT Global Marine',
+    port_of_loading: 'Makassar Port',
+    port_of_discharge: 'Bitung Port',
+    laycan: '10 Jul 2025 - 17 Jul 2025',
+    load_type_information: ['General Cargo', 'Oversized Cargo'],
+  },
+];

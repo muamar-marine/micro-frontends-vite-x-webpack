@@ -1,0 +1,42 @@
+export const mockDebitNoteData = [
+  {
+    date: '10 Jun 2024',
+    debit_note_number: 'No. 83/BMI-TC/DN/VI/2024',
+    vendor_name: 'PT. Beruang Maritim Indonesia',
+    vessel_name: 'TB. SANUKI MARU',
+    reimbursement_type: 'BMI Reimbursement',
+    status: 'Waiting for Approval',
+  },
+  {
+    date: '15 Jun 2024',
+    debit_note_number: 'No. 84/BMI-TC/DN/VI/2024',
+    vendor_name: 'PT. Nusantara Shipping Line',
+    vessel_name: 'MV. Samudera Raya',
+    reimbursement_type: 'VO Reimbursement',
+    status: 'Approved',
+  },
+  {
+    date: '20 Jun 2024',
+    debit_note_number: 'No. 85/BMI-TC/DN/VI/2024',
+    vendor_name: 'PT. Lautan Emas Logistik',
+    vessel_name: 'BG. Borneo Spirit',
+    reimbursement_type: 'BMI Reimbursement',
+    status: 'Rejected',
+  },
+  {
+    date: '25 Jun 2024',
+    debit_note_number: 'No. 86/BMI-TC/DN/VI/2024',
+    vendor_name: 'PT. Global Marine Cargo',
+    vessel_name: 'TB. Nusantara Jaya',
+    reimbursement_type: 'VO Reimbursement',
+    status: 'Request Revision',
+  },
+  {
+    date: '30 Jun 2024',
+    debit_note_number: 'No. 87/BMI-TC/DN/VI/2024',
+    vendor_name: 'PT. Sumber Makmur Laut',
+    vessel_name: 'MV. Cahaya Abadi',
+    reimbursement_type: 'BMI Reimbursement',
+    status: 'Matched',
+  },
+];

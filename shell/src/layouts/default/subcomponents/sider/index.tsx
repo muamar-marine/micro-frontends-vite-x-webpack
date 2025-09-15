@@ -1,7 +1,7 @@
 import './style.css';
 
-import { Button, Menu } from 'antd';
-import type { FC } from 'react';
+import { Menu, Typography, version as antdVersion } from 'antd';
+import { version as reactVersion, type FC } from 'react';
 import { useLocation, type NavigateFunction } from 'react-router-dom';
 
 type LayoutDefaultSiderProps = {
@@ -26,11 +26,6 @@ export const LayoutDefaultSider: FC<LayoutDefaultSiderProps> = ({ nav }) => {
             mode="inline"
             className="default_layout__sider__content__menu"
             items={[
-              {
-                key: 'settings',
-                label: 'Settings',
-                onClick: () => handleNav('/settings'),
-              },
               {
                 key: 's',
                 label: 'Shipment',
@@ -83,10 +78,15 @@ export const LayoutDefaultSider: FC<LayoutDefaultSiderProps> = ({ nav }) => {
           />
         </div>
 
-        <div>
-          <Button style={{ width: '100%' }} type="primary">
-            Logout
-          </Button>
+        <div className="default_layout__sider__versioning">
+          <Typography.Title
+            level={5}
+            style={{ color: '#ffffff', marginBottom: '0.5rem' }}>
+            Versioning
+          </Typography.Title>
+
+          <p style={{ marginBottom: 0 }}>React V{reactVersion}</p>
+          <p style={{ marginBottom: 0 }}>Ant Design V{antdVersion}</p>
         </div>
       </div>
     </aside>

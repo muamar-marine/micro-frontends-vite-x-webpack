@@ -20,7 +20,6 @@
 }
 
 .default_layout__sider__wrapper {
-
   height: 100%;
   overflow: auto;
 }
@@ -43,4 +42,12 @@
 
 .default_layout__sider__content__menu .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
   border-radius: 8px;
+}
+
+.default_layout__sider__versioning {
+
+  background: linear-gradient(to left, #227d53, #12442a);
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 1rem;
 }
