@@ -3,7 +3,9 @@ import { federation } from '@module-federation/vite';
 export default federation({
   name: 'shell',
   filename: 'remoteEntry.js',
-  exposes: {},
+  exposes: {
+    './layouts/default': './src/layouts/default',
+  },
   library: { type: 'var', name: 'shared' },
   remotes: {
     shell: {
@@ -27,5 +29,6 @@ export default federation({
     react: { singleton: true },
     'react-dom': { singleton: true },
     'react-router-dom': { singleton: true },
+    antd: { singleton: true },
   },
 });

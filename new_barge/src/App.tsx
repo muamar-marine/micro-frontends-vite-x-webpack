@@ -1,22 +1,31 @@
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
 import React from 'react';
 
-const LoginPage = React.lazy(() => import('./pages/auth/login'));
-const RegisterPage = React.lazy(() => import('./pages/auth/register'));
+const FinanceDebitNotePage = React.lazy(
+  () => import('./pages/finance/debit-note')
+);
+const FinanceShipmentRecapPage = React.lazy(
+  () => import('./pages/finance/shipment-recap')
+);
 
-const ProfilePage = React.lazy(() => import('./pages/profiles'));
+const ProfileCargoOwnerPage = React.lazy(
+  () => import('./pages/profiles/cargo-owner')
+);
+const ProfileVesselOwnerPage = React.lazy(
+  () => import('./pages/profiles/vessel-owner')
+);
 
 function App() {
   return (
     <Routes>
-      <Route path="auth">
-        <Route path="login" element={<LoginPage />} />
-        <Route path="register" element={<RegisterPage />} />
+      <Route path="f">
+        <Route path="debit_note" element={<FinanceDebitNotePage />} />
+        <Route path="shipment_recap" element={<FinanceShipmentRecapPage />} />
       </Route>
 
-      <Route path="profile">
-        <Route index element={<ProfilePage />} />
+      <Route path="p">
+        <Route path="cargo_owner" element={<ProfileCargoOwnerPage />} />
+        <Route path="vessel_owner" element={<ProfileVesselOwnerPage />} />
       </Route>
     </Routes>
   );

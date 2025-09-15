@@ -1,0 +1,38 @@
+.default_layout__sider {
+  position: sticky;
+  top: 72px;
+  left: 0;
+  padding: 0 0.5rem 0.5rem;
+  height: calc(100dvh - 72px);
+}
+
+.default_layout__sider__content {
+  background-color: #f7f7f7BF;
+  border: thin solid #e8e8e8;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.default_layout__sider__wrapper {
+
+  height: 100%;
+  overflow: auto;
+}
+
+.default_layout__sider__content__menu:where(.mt-menu-light) {
+  background-color: transparent;
+}
+
+.default_layout__sider__content__menu.mt-menu-light.mt-menu-root.mt-menu-inline {
+  border-inline-end: 0px;
+}
+
+.default_layout__sider__content__menu :where(.mt-menu-inline .mt-menu-item) {
+  margin-inline: 0;
+}

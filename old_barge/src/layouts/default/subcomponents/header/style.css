@@ -1,0 +1,51 @@
+.logo {
+  height: 21px;
+}
+
+.default_layout__header {
+  height: 72px;
+  width: 100%;
+  position: sticky;
+  padding: 0.5rem;
+  top: 0;
+}
+
+.default_layout__header__content {
+  background-color: #f7f7f7BF;
+  border: thin solid #e8e8e8;
+  backdrop-filter: blur(4px);
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.default_layout__header__content__user {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: start;
+  padding: 0.25rem;
+  height: unset;
+}
+
+.default_layout__header__content__user>.user-info>p {
+  margin: 0;
+}
+
+.default_layout__header__content__user>.user-info>.name {
+  font-weight: 500;
+  line-height: 14px;
+  margin-bottom: 4px;
+}
+
+.default_layout__header__content__user>.user-info>.email {
+  font-size: 10px;
+  color: #a0a0a0;
+  line-height: 10px;
+}
